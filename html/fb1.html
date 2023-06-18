@@ -5,15 +5,38 @@ input {
 }
 </style>
 <body>
+    <h1>   
+        註冊
+    </h1>
+    <form>
+        <label for="fname"></label><br>
+        <input type="text" placeholder="姓名" id="fname" name="fname"><br>
 
-<h1>註冊</h1>
+        <label for="account"></label><br>
+        <input type="text" placeholder="帳號" id="account" name="account"><br>
 
-<p><input type="text" placeholder="姓名"/></p>
-<p><input type="text" placeholder="帳號"/></p>
-<p><input type="email" placeholder="email"/></p>
-<p><input type="password" placeholder="密碼"/></p>
-<p><input type="text" placeholder="血型"/></p>
-<p><input type="date" placeholder="生日"/></p>
+        <label for="email"></label><br>
+        <input type="email" placeholder="email" id="email" name="email"><br>
 
+        <label for="password"></label><br>
+        <input type="password" placeholder="密碼" id="password" name="password"><br>
+
+        <label for="phone"></label><br>
+        <input type="tel" id="phone" name="phone" placeholder="電話號碼"><br><br>
+
+        <input type="radio" id="boy" name="gender" value="boy">
+        <label for="boy">男</label>
+        <input type="radio" id="girl" name="gender" value="girl">
+        <label for="boy">女</label><br><br>
+
+        <label for="blood type">血型:</label>
+        <select id="blood type" name="blood type">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="AB">AB</option>
+        <option value="O">O</option>
+        </select><br><br>
+  
+</form>
 </body>
 </html>
