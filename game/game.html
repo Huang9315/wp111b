@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>猜數字遊戲</title>
+</head>
+<body>
+  <h1>猜數字遊戲</h1>
+  <p>請猜一個介於 1 到 10 之間的數字：</p>
+  <input type="text" id="guessInput">
+  <button onclick="checkGuess()">猜！</button>
+  <p id="message"></p>
+
+  <script>
+    function checkGuess() {
+      var guessInput = document.getElementById('guessInput');
+      var guess = parseInt(guessInput.value);
+      var message = document.getElementById('message');
+
+      // 生成一個隨機數字
+      var randomNumber = Math.floor(Math.random() * 10) + 1;
+
+      if (guess === randomNumber) {
+        message.textContent = '恭喜！猜對了！';
+      } else if (guess < randomNumber) {
+        message.textContent = '太小了，再試一次。';
+      } else if (guess > randomNumber) {
+        message.textContent = '太大了，再試一次。';
+      }
+    }
+  </script>
+</body>
+</html>
